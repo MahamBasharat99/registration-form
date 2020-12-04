@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><form action="#">
+    <div class="wrapper  R-wrapper">
+        <div class="title">
+           Student Registration Form
+        </div>
+        <div class="form">
+            <div class="input-field">
+                <label> First Name</label>
+                <input type="text" class="input" required placeholder="Enter you first name">
+            </div>
+            <div class="input-field">
+                <label> Last Name</label>
+                <input type="text" class="input" required placeholder="Enter you last name">
+            </div>
+            <div class="input-field">
+                <label>Password</label>
+                <input type="password" class="input" required placeholder="Enter password"></div>
+            <div class="input-field " required>
+                <label class="mm"  for="dob">DATE OF BIRTH</label>
+                <select required name="DOBDay" id="dob">
+                    <option>Day:</option>
+                    <option aria-required="true" value="1">1</option> <option value="2">2</option>
+                    <option value="3">3</option> <option value="4">4</option>
+                    <option value="5">5</option> <option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option>
+                    <option value="9">9</option><option value="10">10</option>
+                </select>
+                <select required name="DOBMonth">
+                    <option>Month:</option><option value="January">January</option>
+                    <option value="Febuary">Febuary</option><option value="March">March</option>
+                    <option value="April">April</option> <option value="May">May</option>
+                    <option value="June">June</option><option value="July">July</option>
+                    <option value="August">August</option><option value="September">September</option>
+                    <option value="October">October</option><option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <select required name="DOBYear">
+                    <option>Year:</option> <option value="2020">2020</option>
+                    <option value="2019">2019</option><option value="2018">2018</option>
+                </select> 
+            </div>
+            <div class="input-field">
+                <label> Confirm Password</label>
+                <input type="password" class="input" required placeholder="Enter password again">
+            </div>
+            <div class="input-field " style="color: white;" >
+                <label class="mm"> Gender:</label>
+                <div  >
+                    Male: <input required type="radio" name="gender" value="m "  style="color:white">
+                Female: <input type="radio" name="gender" value="f">
+                Others: <input type="radio" name="gender" value="o">   
+                </div> 
+            </p>
+            </div>
+            <div class="input-field">
+                <label>Email Address</label>
+                <input type="email" class="input" required placeholder="Enter your email">
+            </div>
+            <div class="input-field">
+                <label> Phone Number</label>
+                <input type="number" class="input" required placeholder="Enter your phone #">
+            </div>
+            <div class="input-field">
+                <label>Address</label>
+                <textarea required name="address" id="addr" cols="60" rows="8"placeholder="Address"></textarea>
+            </div>
+            <div class="input-field-image">
+                <label class="mm" for=" pho"  > Choose file:</label>
+                <input type="file" class="input">
+            </div><br>
+            <div class="input-field terms">
+                    <input type="checkbox" class="" required>&nbsp;   
+                <p > Agree to terms and conditions</p>
+            </div>
+            <div class="input-field">
+               <a href="#"><input type="submit" value="Register" class="btn"></a> &nbsp;
+               <a href="#"> <input type="reset" value="Reset" class="btn"></a>
+                
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
